@@ -3,7 +3,7 @@ import { listTools } from "@/lib/services/tools";
 import { listCategories } from "@/lib/services/categories";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://xyphoria-ii7a6osx9-rexxu958s-projects.vercel.app";
 
   const [tools, categories] = await Promise.all([
     listTools().catch(() => []),
