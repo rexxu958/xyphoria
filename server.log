@@ -1,0 +1,185 @@
+
+> xyphoria@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1713ms
+ ✓ Compiled /api/auth/login in 331ms (161 modules)
+=== LOGIN DEBUG START ===
+OWNER_USERNAME: "rexxu"
+OWNER_PASSWORD_HASH: "$2b$12$MhB9XY88SNAPOQU6feKBpeqeC4geTyxIwIeE7oiNv3BmBkeqwylsq"
+SESSION_SECRET length: 64
+Body received: { username: 'rexxu', password: 'xyphoriaxz' }
+Username match: true
+Password match: true
+Session created successfully
+ POST /api/auth/login 200 in 732ms
+ ✓ Compiled /middleware in 347ms (72 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 4.3s (2349 modules)
+ ○ Compiling /api/admin/activity ...
+ ✓ Compiled /api/admin/activity in 1261ms (1259 modules)
+ ✓ Compiled (1261 modules)
+ GET /api/admin/activity?limit=8 200 in 1821ms
+ GET /api/admin/activity?limit=8 200 in 366ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'slice')
+    at GET (webpack-internal:///(rsc)/./app/api/admin/analytics/route.ts:42:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/start-server.js:141:13)
+ GET /api/admin/analytics 500 in 4007ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'slice')
+    at GET (webpack-internal:///(rsc)/./app/api/admin/analytics/route.ts:42:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/start-server.js:141:13)
+ GET /api/admin/analytics 500 in 354ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1074ms (1708 modules)
+ ✓ Compiled /api/auth/login in 119ms (719 modules)
+=== LOGIN DEBUG START ===
+OWNER_USERNAME: "rexxu"
+OWNER_PASSWORD_HASH: "$2b$12$MhB9XY88SNAPOQU6feKBpeqeC4geTyxIwIeE7oiNv3BmBkeqwylsq"
+SESSION_SECRET length: 64
+Body received: { username: 'rexxu', password: 'xyphoriaxz' }
+Username match: true
+Password match: true
+Session created successfully
+ POST /api/auth/login 200 in 556ms
+ ✓ Compiled /dashboard in 440ms (1256 modules)
+ ✓ Compiled /api/admin/activity in 319ms (1266 modules)
+ ✓ Compiled (1268 modules)
+ GET /api/admin/activity?limit=8 200 in 1485ms
+ GET /api/admin/activity?limit=8 200 in 353ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'slice')
+    at GET (webpack-internal:///(rsc)/./app/api/admin/analytics/route.ts:42:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/start-server.js:141:13)
+ GET /api/admin/analytics 500 in 3644ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'slice')
+    at GET (webpack-internal:///(rsc)/./app/api/admin/analytics/route.ts:42:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:57228
+    at async eT.execute (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:46851)
+    at async eT.handle (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/compiled/next-server/app-route.runtime.dev.js:6:58760)
+    at async doRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1366:42)
+    at async cacheEntry.responseCache.get.routeKind (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1588:28)
+    at async DevServer.renderToResponseWithComponentsImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1496:28)
+    at async DevServer.renderPageComponent (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/base-server.js:818:17)
+    at async /home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:179:21)
+    at async handleRequest (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:359:24)
+    at async requestHandlerImpl (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/router-server.js:383:13)
+    at async Server.requestListener (/home/xyphoria/Unduhan/xyphoria-1/node_modules/next/dist/server/lib/start-server.js:141:13)
+ GET /api/admin/analytics 500 in 824ms
+ ○ Compiling /dashboard/tools ...
+ ✓ Compiled /dashboard/tools in 528ms (2387 modules)
+ ✓ Compiled /api/admin/tools in 167ms (1278 modules)
+ ✓ Compiled /dashboard/upload in 342ms (2403 modules)
+ ✓ Compiled /api/admin/categories in 167ms (1288 modules)
+ GET /api/admin/tools 200 in 3183ms
+ GET /api/admin/tools 200 in 3010ms
+ GET /api/admin/categories 200 in 3525ms
+ GET /api/admin/categories 200 in 5ms
+ ○ Compiling /dashboard/categories ...
+ ✓ Compiled /dashboard/categories in 504ms (1824 modules)
+ ✓ Compiled /api/admin/categories in 87ms (737 modules)
+ GET /api/admin/categories 200 in 2740ms
+ GET /api/admin/categories 200 in 7ms
+ POST /api/admin/categories 201 in 3117ms
+ POST /api/admin/categories 409 in 377ms
+ GET /api/admin/categories 200 in 361ms
+ ✓ Compiled /dashboard/upload in 224ms (736 modules)
+ GET /api/admin/categories 200 in 3687ms
+ GET /api/admin/categories 200 in 17ms
+ ✓ Compiled /api/admin/tools in 131ms (740 modules)
+ POST /api/admin/tools 201 in 3185ms
+ ✓ Compiled /api/admin/upload in 281ms (743 modules)
+ POST /api/admin/upload 200 in 7310ms
+ ✓ Compiled /dashboard/tools in 465ms (743 modules)
+ ○ Compiling / ...
+ GET /api/admin/tools 200 in 4370ms
+ ✓ Compiled / in 5.6s (3063 modules)
+ GET /api/admin/tools 200 in 7395ms
+ ✓ Compiled /tools in 370ms (3073 modules)
+ ✓ Compiled /api/tools in 166ms (1361 modules)
+ ✓ Compiled (1363 modules)
+ GET /api/tools?sort=newest 200 in 2795ms
+ GET /api/tools?sort=newest 200 in 5ms
+ GET /api/categories 200 in 2810ms
+ GET /api/categories 200 in 10ms
+ ○ Compiling /tools/[slug] ...
+ ✓ Compiled /tools/[slug] in 571ms (3103 modules)
+ GET /api/tools?sort=newest 200 in 23ms
+ GET /api/tools?sort=featured 200 in 22ms
+ GET /api/tools?sort=newest 200 in 12ms
+ GET /api/categories 200 in 378ms
+ GET /api/categories 200 in 24ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 1086ms (2369 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 579ms (1250 modules)
+ GET /api/categories 200 in 19ms
+ GET /api/tools?sort=newest 200 in 26ms
+ GET /api/categories 200 in 13ms
+ GET /api/tools?sort=newest 200 in 11ms
+ GET /api/tools?category=exploit-xyphoria&sort=newest 200 in 1295ms
