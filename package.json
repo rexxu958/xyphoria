@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/open-vercel.mjs",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/open-vercel.mjs",
+    "next:dev": "next dev",
+    "next:start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
   },
