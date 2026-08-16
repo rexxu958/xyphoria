@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: siteName,
       description
     },
-    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://xyphoria-ii7a6osx9-rexxu958s-projects.vercel.app")
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://xyphoria.vercel.app")
   };
 }
 
